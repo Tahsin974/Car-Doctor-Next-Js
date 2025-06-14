@@ -1,7 +1,9 @@
+import HomeBanner from "./components/HomeBanner/HomeBanner";
+
 export default function Home() {
   return (
     <div>
-      <input type="checkbox" value="dark" className="toggle theme-controller" />
+      <HomeBanner />
     </div>
   );
 }
