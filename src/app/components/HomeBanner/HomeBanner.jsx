@@ -12,12 +12,12 @@ export default function HomeBanner() {
       <div className="carousel ">
         <div id="slide1" className="carousel-item relative w-full">
           <Image src={banner1} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
                 Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -31,16 +31,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute  right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between ">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between ">
             <a
               href="#slide6"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide2"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>
@@ -48,12 +48,12 @@ export default function HomeBanner() {
         </div>
         <div id="slide2" className="carousel-item relative w-full">
           <Image src={banner2} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
                 Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -67,16 +67,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between">
             <a
               href="#slide1"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide3"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>
@@ -84,12 +84,12 @@ export default function HomeBanner() {
         </div>
         <div id="slide3" className="carousel-item relative w-full">
           <Image src={banner3} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
                 Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -103,16 +103,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between">
             <a
               href="#slide2"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide4"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>
@@ -120,12 +120,12 @@ export default function HomeBanner() {
         </div>
         <div id="slide4" className="carousel-item relative w-full">
           <Image src={banner4} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
                 Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -139,16 +139,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between">
             <a
               href="#slide3"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide5"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>
@@ -156,12 +156,12 @@ export default function HomeBanner() {
         </div>
         <div id="slide5" className="carousel-item relative w-full">
           <Image src={banner5} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
                 Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -175,16 +175,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between">
             <a
               href="#slide4"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide6"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>
@@ -192,12 +192,12 @@ export default function HomeBanner() {
         </div>
         <div id="slide6" className="carousel-item relative w-full">
           <Image src={banner6} width={1140} height={600} alt="banner" />
-          <div className="w-1/2 top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
-            <div className="m-20 absolute  space-y-6">
-              <h1 className="text-6xl font-bold">
-                Affordable <br /> Price For Car Servicing
+          <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
+            <div className="xl:m-20 lg:m-20 md:m-20 sm:m-16 m-4 absolute  xl:space-y-6 lg:space-y-6 md:space-y-6 space-y-3">
+              <h1 className="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-xl font-bold">
+                Affordable Price For Car Servicing
               </h1>
-              <p>
+              <p className="xl:text-lg lg:text-lg md:text-lg sm:text-lg text-sm">
                 There are many variations of passages of available, but the
                 majority have suffered alteration in some form
               </p>
@@ -211,16 +211,16 @@ export default function HomeBanner() {
               </div>
             </div>
           </div>
-          <div className="absolute right-10 bottom-5 space-x-6 flex -translate-y-1/2 transform justify-between">
+          <div className="absolute  xl:right-10 right-2 bottom-0 space-x-6 flex -translate-y-1/2 transform justify-between">
             <a
               href="#slide5"
-              className="btn btn-circle bg-transparent shadow-none text-white"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-transparent shadow-none text-white"
             >
               ❮
             </a>
             <a
               href="#slide1"
-              className="btn btn-circle bg-red-500 text-white shadow-none"
+              className="btn btn-circle btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg bg-red-500 text-white shadow-none"
             >
               ❯
             </a>

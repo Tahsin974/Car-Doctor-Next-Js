@@ -74,7 +74,7 @@ export default function NavBar({ children }) {
           {/* Page content here */}
           {children}
         </div>
-        <div className="drawer-side ">
+        <div className="drawer-side z-20">
           <label
             htmlFor="my-drawer-3"
             aria-label="close sidebar"
