@@ -29,7 +29,7 @@ export default function NavBar({ children }) {
         <div className="drawer-content flex flex-col ">
           {/* Navbar */}
           <div className="sticky top-0 z-10 w-full">
-            <div className="max-w-[1140px] mx-auto flex items-center justify-between bg-base-100  py-2 ">
+            <div className="max-w-[1140px] mx-auto flex items-center justify-between bg-base-100  py-2 px-4">
               <div className="navbar-start">
                 <div className="flex-none lg:hidden">
                   <label
@@ -53,7 +53,7 @@ export default function NavBar({ children }) {
                   </label>
                 </div>
                 <Link href="/">
-                  <Image src={Logo} height={87} width={107} />
+                  <Image src={Logo} height={87} width={107} alt="logo" />
                 </Link>
               </div>
               <div className="navbar-center hidden lg:flex">
@@ -67,7 +67,7 @@ export default function NavBar({ children }) {
                   value="dark"
                   className="toggle theme-controller"
                 />
-                <a className="btn btn-outline">Appointment</a>
+                <button className="btn btn-outline">Appointment</button>
               </div>
             </div>
           </div>

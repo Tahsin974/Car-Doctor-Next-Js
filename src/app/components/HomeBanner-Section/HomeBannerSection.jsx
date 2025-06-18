@@ -6,10 +6,10 @@ import banner4 from "../../../../public/assets/images/banner/4.jpg";
 import banner5 from "../../../../public/assets/images/banner/5.jpg";
 import banner6 from "../../../../public/assets/images/banner/6.jpg";
 
-export default function HomeBanner() {
+export default function HomeBannerSection() {
   return (
-    <div className="max-w-[1140px] mx-auto">
-      <div className="carousel ">
+    <div>
+      <div className="carousel max-h-[600px]">
         <div id="slide1" className="carousel-item relative w-full">
           <Image src={banner1} width={1140} height={600} alt="banner" />
           <div className="xl:w-1/2 lg:w-1/2 md:w-1/2   w-full top-0 h-full absolute bg-gradient-to-r from-black/80 text-white flex items-center">
