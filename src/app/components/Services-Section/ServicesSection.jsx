@@ -5,7 +5,7 @@ import ServiceCard from "./ServiceCard/ServiceCard";
 
 export default async function ServicesSection() {
   const services = await servicesData();
-  console.log(services);
+
   return (
     <div className=" bg-base-100 min-h-screen space-y-6 px-4">
       <SectionTitle></SectionTitle>

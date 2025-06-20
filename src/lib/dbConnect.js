@@ -5,7 +5,7 @@ export const collectionNames = {
 };
 export default function dbConnect(collectionName) {
   const uri = process.env.MONGO_URI;
-  console.log("mongo uri", uri);
+
   // Create a MongoClient with a MongoClientOptions object to set the Stable API version
   if (uri) {
     const client = new MongoClient(uri, {

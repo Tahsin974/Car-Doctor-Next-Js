@@ -1,0 +1,10 @@
+.swiper {
+  max-height: 600px !important;
+}
+
+/* @media only screen and (min-width: 1140px) {
+  .swiper {
+    max-height: 600px !important;
+    max-width: 1140px !important;
+  }
+} */
