@@ -29,7 +29,7 @@ export default function NavBar({ children }) {
         <div className="drawer-content flex flex-col ">
           {/* Navbar */}
           <div className="sticky top-0 z-20 w-full">
-            <div className="max-w-[1140px] mx-auto w-full flex items-center justify-center bg-base-100  py-2 px-4">
+            <div className="xl:max-w-[1140px] lg:max-w-[1140px] mx-auto w-full flex items-center justify-center bg-base-100  py-2 px-4">
               <div className="navbar-start">
                 <div className="flex-none lg:hidden">
                   <label
