@@ -1,8 +1,19 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "../../../public/assets/logo.svg";
+import { IoCloseOutline } from "react-icons/io5";
+
+import { useRef } from "react";
 
 export default function NavBar({ children }) {
+  const menuRef = useRef(null);
+  const handleCloseBtn = () => {
+    if (menuRef.current) {
+      console.log(menuRef.current.checked);
+      menuRef.current.checked = false;
+    }
+  };
   const navMenu = (
     <>
       <li>
@@ -25,7 +36,12 @@ export default function NavBar({ children }) {
   return (
     <div>
       <div className="drawer ">
-        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <input
+          ref={menuRef}
+          id="my-drawer-3"
+          type="checkbox"
+          className="drawer-toggle"
+        />
         <div className="drawer-content flex flex-col ">
           {/* Navbar */}
           <div className="sticky top-0 z-20 w-full">
@@ -89,14 +105,16 @@ export default function NavBar({ children }) {
                   </svg>
                 </label>
 
-                <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
-                  Appointment
-                </button>
-                <Link href={"/register"}>
+                <div className="hidden xl:flex lg:flex gap-4">
                   <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
-                    Register
+                    Appointment
                   </button>
-                </Link>
+                  <Link href={"/register"}>
+                    <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
+                      Register
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -109,7 +127,27 @@ export default function NavBar({ children }) {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className="menu bg-base-200 min-h-full w-80 p-4">{navMenu}</ul>
+
+          <ul className="menu bg-base-200 min-h-full w-80 p-4">
+            <button
+              className="btn btn-circle mb-3.5 ms-auto border-[#FF3811] text-[#FF3811] bg-none  shadow-none "
+              onClick={handleCloseBtn}
+            >
+              <IoCloseOutline className="text-lg" />
+            </button>
+            {navMenu}
+            <li className="gap-4">
+              <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
+                Appointment
+              </button>
+              <Link
+                href={"/register"}
+                className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg"
+              >
+                Register
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
