@@ -1,18 +1,50 @@
+import addUser from "@/app/actions/Users/addUser";
 import Link from "next/link";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 
 export default function RegisterForm() {
+  const handleRegisterForm = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const userName = form.name.value;
+    const userEmail = form.email.value;
+    const userPassword = form.password.value;
+    const payload = {
+      name: userName,
+      email: userEmail,
+      password: userPassword,
+    };
+    const id = await addUser(payload);
+    if (id) {
+      alert("User Added Successfully");
+    }
+  };
   return (
     <div className="space-y-6 p-5">
       <h1 className="text-center text-4xl font-bold">Sign Up</h1>
-      <form className="fieldset">
+      <form onSubmit={handleRegisterForm} className="fieldset">
         <label className="label font-bold">Name</label>
-        <input type="text" className="input" placeholder="Your Name" />
+        <input
+          name="name"
+          type="text"
+          className="input"
+          placeholder="Your Name"
+        />
         <label className="label font-bold">Email</label>
-        <input type="email" className="input" placeholder="Your Email" />
+        <input
+          name="email"
+          type="email"
+          className="input"
+          placeholder="Your Email"
+        />
         <label className="label font-bold">Password</label>
-        <input type="password" className="input" placeholder="Your Password" />
+        <input
+          name="password"
+          type="password"
+          className="input"
+          placeholder="Your Password"
+        />
 
         <button className="btn  bg-[#FF3811] border-[#FF3811] text-white mt-4">
           Sign up

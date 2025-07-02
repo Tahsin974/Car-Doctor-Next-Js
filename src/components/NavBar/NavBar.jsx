@@ -4,9 +4,12 @@ import Link from "next/link";
 import Logo from "../../../public/assets/logo.svg";
 import { IoCloseOutline } from "react-icons/io5";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export default function NavBar({ children }) {
+  const pathname = usePathname();
+  console.log(pathname);
   const menuRef = useRef(null);
   const handleCloseBtn = () => {
     if (menuRef.current) {
@@ -14,6 +17,12 @@ export default function NavBar({ children }) {
       menuRef.current.checked = false;
     }
   };
+  useEffect(() => {
+    if (menuRef.current) {
+      console.log(menuRef.current.checked);
+      menuRef.current.checked = false;
+    }
+  }, [pathname]);
   const navMenu = (
     <>
       <li>
