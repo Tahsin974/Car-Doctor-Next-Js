@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
 export default function ServiceCard({ service }) {
-  const { title, img, price } = service;
+  const { _id, title, img, price } = service;
   return (
     <div>
       <div className="card bg-base-100 max-w-[364px] max-h-[348px] shadow-sm p-5 space-y-2.5">
@@ -24,7 +24,10 @@ export default function ServiceCard({ service }) {
               Price: ${price}
             </h4>
             <div className="card-actions justify-end">
-              <Link href="/" className="text-[#FF3811] text-lg">
+              <Link
+                href={`/services/${_id}`}
+                className="text-[#FF3811] text-lg"
+              >
                 <FaArrowRight />
               </Link>
             </div>

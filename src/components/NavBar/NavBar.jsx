@@ -92,6 +92,11 @@ export default function NavBar({ children }) {
                 <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
                   Appointment
                 </button>
+                <Link href={"/register"}>
+                  <button className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-lg">
+                    Register
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

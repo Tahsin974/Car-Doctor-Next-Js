@@ -1,7 +1,7 @@
 import SectionTitle from "@/components/SectionTitle/SectionTitle";
 
-import servicesData from "@/app/actions/servicesData";
 import ServiceCard from "./ServiceCard/ServiceCard";
+import servicesData from "@/app/actions/Services-Data/servicesData";
 
 export default async function ServicesSection() {
   const services = await servicesData();
